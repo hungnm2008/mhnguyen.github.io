@@ -300,13 +300,6 @@ img { max-width: 100%; height: auto; }
   margin-bottom: var(--space-lg);
   line-height: 1.8;
 }
-.hero-contact {
-  margin-bottom: var(--space-md);
-}
-.hero-contact .contact-location {
-  font-size: 0.95rem;
-  color: var(--color-text-light);
-}
 .hero-links {
   display: flex;
   gap: var(--space-sm);
@@ -737,7 +730,6 @@ img { max-width: 100%; height: auto; }
     text-align: center;
   }
   .hero-bio { margin-left: auto; margin-right: auto; }
-  .hero-contact { margin-left: auto; margin-right: auto; }
   .hero-links { justify-content: center; }
   .hero-image { order: -1; }
   .hero-image-frame { width: 140px; height: 170px; }
