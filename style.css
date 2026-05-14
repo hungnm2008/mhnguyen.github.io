@@ -543,6 +543,7 @@ img { max-width: 100%; height: auto; }
   flex-shrink: 0;
   white-space: nowrap;
   vertical-align: middle;
+  margin-left: 12px;
 }
 .pub-link {
   font-size: 0.82rem;
