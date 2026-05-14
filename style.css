@@ -412,10 +412,8 @@ img { max-width: 100%; height: auto; }
   gap: var(--space-md);
 }
 .detail-card li {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-  align-items: baseline;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 .detail-card li strong {
   font-size: 0.95rem;
