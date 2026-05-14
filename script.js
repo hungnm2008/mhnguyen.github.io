@@ -105,5 +105,13 @@
       navToggle.click();
     }
   });
+  /* ---------- Email obfuscation (base64) ---------- */
+  document.querySelectorAll('.js-email').forEach(el => {
+    const user = atob(el.dataset.u);
+    const domain = atob(el.dataset.d);
+    const email = user + '@' + domain;
+    el.href = 'mailto:' + email;
+    el.textContent = email;
+  });
 
 })();
