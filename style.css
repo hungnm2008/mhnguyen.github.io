@@ -237,11 +237,12 @@ img { max-width: 100%; height: auto; }
 
 /* ---------- HERO ---------- */
 .hero {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: var(--nav-height);
+  padding-bottom: 2rem;
   background: var(--color-hero-bg);
   position: relative;
   overflow: hidden;
@@ -365,8 +366,8 @@ img { max-width: 100%; height: auto; }
   justify-content: center;
 }
 .hero-image-frame {
-  width: 300px;
-  height: 360px;
+  width: 250px;
+  height: 300px;
   border-radius: 16px;
   overflow: hidden;
   border: 4px solid var(--color-white);
@@ -772,7 +773,7 @@ img { max-width: 100%; height: auto; }
   .hero-contact { margin-left: auto; margin-right: auto; }
   .hero-links { justify-content: center; }
   .hero-image { order: -1; }
-  .hero-image-frame { width: 220px; height: 260px; }
+  .hero-image-frame { width: 200px; height: 240px; }
   .hero h1 { font-size: 2.6rem; }
   .hero-tagline { font-size: 1.1rem; }
 
