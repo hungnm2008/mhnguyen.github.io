@@ -34,7 +34,7 @@
   --space-lg:  1.5rem;
   --space-xl:  2rem;
   --space-2xl: 3rem;
-  --space-3xl: 3rem;
+  --space-3xl: 2rem;
 
   /* Sizing */
   --max-width: 1100px;
@@ -413,8 +413,9 @@ img { max-width: 100%; height: auto; }
 }
 .detail-card li {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: baseline;
 }
 .detail-card li strong {
   font-size: 0.95rem;
