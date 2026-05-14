@@ -301,24 +301,16 @@ img { max-width: 100%; height: auto; }
   line-height: 1.8;
 }
 .hero-contact {
-  margin-bottom: var(--space-sm);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
 }
-
-.hero-contact .contact-email {
-  display: block;
-  font-size: 1rem;
-  color: var(--color-accent);
-  text-decoration: none;
-  font-weight: 500;
-  margin-bottom: 3px;
-}
-
 .hero-contact .contact-location {
-  display: block;
   font-size: 0.95rem;
   color: var(--color-text-light);
 }
-
 .hero-links {
   display: flex;
   gap: var(--space-sm);
