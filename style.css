@@ -538,8 +538,11 @@ img { max-width: 100%; height: auto; }
 }
 
 .pub-links {
-  display: flex;
-  gap: var(--space-md);
+  display: inline-flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-left: 8px;
+  vertical-align: middle;
 }
 .pub-link {
   font-size: 0.82rem;
