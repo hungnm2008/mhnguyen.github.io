@@ -377,11 +377,13 @@ img { max-width: 100%; height: auto; }
 
 
 /* ---------- ABOUT ---------- */
+
 .about-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1fr 1fr;
   gap: var(--space-2xl);
 }
+
 .about-text p {
   margin-bottom: var(--space-sm);
   line-height: 1.8;
@@ -519,10 +521,6 @@ img { max-width: 100%; height: auto; }
   font-weight: 600;
   margin-bottom: 4px;
   line-height: 1.4;
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  flex-wrap: wrap;
 }
 .pub-authors {
   font-size: 0.9rem;
@@ -542,8 +540,9 @@ img { max-width: 100%; height: auto; }
 .pub-links {
   display: inline-flex;
   gap: 6px;
-  flex-wrap: wrap;
   flex-shrink: 0;
+  white-space: nowrap;
+  vertical-align: middle;
 }
 .pub-link {
   font-size: 0.82rem;
