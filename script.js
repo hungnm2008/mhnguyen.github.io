@@ -1,5 +1,5 @@
 /* ===================================================================
-   YOUR NAME — Academic Page: Interactivity
+   Manh Hung Nguyen — Academic Page: Interactivity
    =================================================================== */
 
 (function () {
