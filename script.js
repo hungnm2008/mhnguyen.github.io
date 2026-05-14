@@ -111,7 +111,7 @@
     const domain = atob(el.dataset.d);
     const email = user + '@' + domain;
     el.href = 'mailto:' + email;
-    if (!el.dataset.keepText) el.textContent = email;
+    if (!('keepText' in el.dataset)) el.textContent = email;
   });
 
 })();
