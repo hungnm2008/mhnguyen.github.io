@@ -299,12 +299,31 @@ img { max-width: 100%; height: auto; }
   margin-bottom: var(--space-lg);
   line-height: 1.8;
 }
+.hero-contact {
+  margin-bottom: var(--space-sm);
+}
+
+.hero-contact .contact-email {
+  display: block;
+  font-size: 1rem;
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.hero-contact .contact-location {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+}
 
 .hero-links {
   display: flex;
-  gap: var(--space-md);
+  gap: var(--space-sm);
   flex-wrap: wrap;
 }
+
 
 .btn {
   display: inline-flex;
@@ -750,6 +769,7 @@ img { max-width: 100%; height: auto; }
     text-align: center;
   }
   .hero-bio { margin-left: auto; margin-right: auto; }
+  .hero-contact { margin-left: auto; margin-right: auto; }
   .hero-links { justify-content: center; }
   .hero-image { order: -1; }
   .hero-image-frame { width: 220px; height: 260px; }
