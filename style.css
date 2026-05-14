@@ -564,7 +564,7 @@ img { max-width: 100%; height: auto; }
 .service-list {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: var(--space-lg);
 }
 
 .service-item {
@@ -580,7 +580,7 @@ img { max-width: 100%; height: auto; }
 
 .service-label {
   font-size: 0.95rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-heading);
   padding-top: 2px;
 }
