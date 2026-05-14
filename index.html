@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Academic Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">Your Name</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#talks">Talks</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello! I'm</p>
+        <h1>Your Name</h1>
+        <p class="hero-tagline">Assistant Professor at <a href="#" class="link">University Name</a></p>
+        <p class="hero-bio">
+          I study <strong>your research area</strong>, seeking to understand how
+          <em>key question or theme</em>. Beyond the lab, I lead community
+          initiatives and open science efforts to make research more accessible.
+        </p>
+        <div class="hero-links">
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="#about" class="btn btn-outline">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-frame">
+          <!-- Replace with your photo: <img src="photo.jpg" alt="Your Name"> -->
+          <div class="hero-image-placeholder">
+            <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="60" cy="45" r="25" fill="#8B7355" opacity="0.3"/>
+              <ellipse cx="60" cy="100" rx="40" ry="25" fill="#8B7355" opacity="0.2"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll to explore</span>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">01</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am an Assistant Professor in the Department of
+            <a href="#" class="link">Your Department</a> at
+            <a href="#" class="link">Your University</a>.
+            My research lies at the intersection of <strong>Area A</strong>,
+            <strong>Area B</strong>, and <strong>Area C</strong>, with a focus on
+            developing methods that are both theoretically grounded and practically impactful.
+          </p>
+          <p>
+            Before this, I was a postdoctoral researcher at
+            <a href="#" class="link">Institution</a>, working with
+            <a href="#" class="link">Advisor Name</a>.
+            I received my Ph.D. from
+            <a href="#" class="link">University</a>, advised by
+            <a href="#" class="link">Advisor Name</a>.
+          </p>
+          <p>
+            Outside of research, I care deeply about open science, mentorship,
+            and building inclusive academic communities. I believe that
+            science is at its best when it is collaborative, transparent,
+            and accessible to everyone.
+          </p>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <h3>Education</h3>
+            <ul>
+              <li>
+                <strong>Ph.D. in Your Field</strong>
+                <span>University Name, 2020</span>
+              </li>
+              <li>
+                <strong>M.Sc. in Your Field</strong>
+                <span>University Name, 2016</span>
+              </li>
+              <li>
+                <strong>B.Sc. in Your Field</strong>
+                <span>University Name, 2014</span>
+              </li>
+            </ul>
+          </div>
+          <div class="detail-card">
+            <h3>Positions</h3>
+            <ul>
+              <li>
+                <strong>Assistant Professor</strong>
+                <span>University Name, 2021–present</span>
+              </li>
+              <li>
+                <strong>Postdoctoral Researcher</strong>
+                <span>Institution Name, 2019–2021</span>
+              </li>
+            </ul>
+          </div>
+          <div class="detail-card">
+            <h3>Awards</h3>
+            <ul>
+              <li>
+                <strong>Best Paper Award</strong>
+                <span>Conference Name, 2023</span>
+              </li>
+              <li>
+                <strong>Fellowship Name</strong>
+                <span>2020–2021</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESEARCH ===================== -->
+  <section id="research" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">02</span>
+        <h2>Research</h2>
+      </div>
+      <p class="section-intro">
+        My research explores how we can build systems and methods that are
+        more reliable, interpretable, and aligned with human values.
+        I'm currently focused on three main directions.
+      </p>
+      <div class="research-grid">
+
+        <div class="research-card" data-delay="0">
+          <div class="research-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="24" r="18"/>
+              <circle cx="24" cy="24" r="8"/>
+              <line x1="24" y1="2" x2="24" y2="10"/>
+              <line x1="24" y1="38" x2="24" y2="46"/>
+              <line x1="2" y1="24" x2="10" y2="24"/>
+              <line x1="38" y1="24" x2="46" y2="24"/>
+            </svg>
+          </div>
+          <h3>Research Theme One</h3>
+          <p>
+            Developing new frameworks for understanding complex systems,
+            with applications in domain areas. Key questions include:
+            how do we ensure reliability? What makes a method trustworthy?
+          </p>
+          <div class="research-tags">
+            <span class="tag">Keyword A</span>
+            <span class="tag">Keyword B</span>
+            <span class="tag">Keyword C</span>
+          </div>
+        </div>
+
+        <div class="research-card" data-delay="1">
+          <div class="research-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="6" width="36" height="36" rx="4"/>
+              <line x1="6" y1="18" x2="42" y2="18"/>
+              <line x1="18" y1="6" x2="18" y2="42"/>
+              <circle cx="30" cy="30" r="6"/>
+            </svg>
+          </div>
+          <h3>Research Theme Two</h3>
+          <p>
+            Building tools and algorithms that bridge theory and practice,
+            enabling real-world impact. This work has led to open-source
+            systems used by thousands of researchers worldwide.
+          </p>
+          <div class="research-tags">
+            <span class="tag">Keyword D</span>
+            <span class="tag">Keyword E</span>
+            <span class="tag">Keyword F</span>
+          </div>
+        </div>
+
+        <div class="research-card" data-delay="2">
+          <div class="research-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4L4 14v20l20 10 20-10V14L24 4z"/>
+              <path d="M4 14l20 10 20-10"/>
+              <line x1="24" y1="24" x2="24" y2="44"/>
+            </svg>
+          </div>
+          <h3>Research Theme Three</h3>
+          <p>
+            Exploring the societal and ethical dimensions of technology,
+            with a focus on fairness, accountability, and transparency.
+            How do we align systems with human values at scale?
+          </p>
+          <div class="research-tags">
+            <span class="tag">Keyword G</span>
+            <span class="tag">Keyword H</span>
+            <span class="tag">Keyword I</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PUBLICATIONS ===================== -->
+  <section id="publications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">03</span>
+        <h2>Publications</h2>
+      </div>
+      <p class="section-intro">
+        Selected publications. For a complete list, see my
+        <a href="#" class="link">Google Scholar</a>.
+      </p>
+      <div class="publications-list">
+
+        <div class="pub-item">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <h3>Paper Title: Subtitle or Description of the Main Contribution</h3>
+            <p class="pub-authors">
+              <strong>Your Name</strong>, Co-Author One, Co-Author Two, Co-Author Three
+            </p>
+            <p class="pub-venue">
+              <em>Conference on Research</em> 2025 &mdash; <span class="pub-highlight">Best Paper Award</span>
+            </p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">Paper</a>
+              <a href="#" class="pub-link">Code</a>
+              <a href="#" class="pub-link">Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2025</div>
+          <div class="pub-content">
+            <h3>Another Paper Title: With a Different Focus and Contribution</h3>
+            <p class="pub-authors">
+              Co-Author One, <strong>Your Name</strong>, Co-Author Two
+            </p>
+            <p class="pub-venue">
+              <em>Journal of Important Research</em> 2025 &mdash; <span class="pub-highlight">Spotlight</span>
+            </p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">Paper</a>
+              <a href="#" class="pub-link">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <h3>Earlier Work Title: Foundational Methods for a Core Problem</h3>
+            <p class="pub-authors">
+              <strong>Your Name</strong>, Co-Author One
+            </p>
+            <p class="pub-venue">
+              <em>Top-Tier Conference</em> 2024
+            </p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">Paper</a>
+              <a href="#" class="pub-link">Code</a>
+              <a href="#" class="pub-link">Talk</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <h3>Collaborative Work Title: Cross-Disciplinary Investigation</h3>
+            <p class="pub-authors">
+              Co-Author One, Co-Author Two, <strong>Your Name</strong>, Co-Author Three, Co-Author Four
+            </p>
+            <p class="pub-venue">
+              <em>Another Venue</em> 2024
+            </p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">Paper</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <div class="pub-year">2023</div>
+          <div class="pub-content">
+            <h3>Earlier Paper Title: Setting the Stage for Current Research</h3>
+            <p class="pub-authors">
+              <strong>Your Name</strong>, Advisor Name
+            </p>
+            <p class="pub-venue">
+              <em>Workshop at Major Conference</em> 2023
+            </p>
+            <div class="pub-links">
+              <a href="#" class="pub-link">Paper</a>
+              <a href="#" class="pub-link">Code</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TEACHING ===================== -->
+  <section id="teaching" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">04</span>
+        <h2>Teaching</h2>
+      </div>
+      <div class="teaching-grid">
+
+        <div class="teaching-card">
+          <div class="teaching-term">Fall 2025</div>
+          <h3>CS 590: Advanced Topics in Your Field</h3>
+          <p>Graduate seminar covering recent advances in your research area. Students read and present papers, complete a research project.</p>
+          <a href="#" class="link">Course Website &rarr;</a>
+        </div>
+
+        <div class="teaching-card">
+          <div class="teaching-term">Spring 2025</div>
+          <h3>CS 330: Introduction to Your Field</h3>
+          <p>Undergraduate course introducing foundational concepts, with hands-on programming assignments and a final project.</p>
+          <a href="#" class="link">Course Website &rarr;</a>
+        </div>
+
+        <div class="teaching-card">
+          <div class="teaching-term">Fall 2024</div>
+          <h3>CS 790: Seminar on Special Topic</h3>
+          <p>PhD-level reading group focused on a specific sub-area. Emphasis on critical analysis and research direction identification.</p>
+          <a href="#" class="link">Syllabus &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TALKS ===================== -->
+  <section id="talks" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">05</span>
+        <h2>Talks &amp; Workshops</h2>
+      </div>
+      <div class="talks-list">
+
+        <div class="talk-item">
+          <div class="talk-date">Mar 2025</div>
+          <div class="talk-content">
+            <h3>Keynote: Title of Your Keynote Presentation</h3>
+            <p>Conference Name, City, Country</p>
+            <div class="talk-links">
+              <a href="#" class="pub-link">Slides</a>
+              <a href="#" class="pub-link">Video</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="talk-item">
+          <div class="talk-date">Jan 2025</div>
+          <div class="talk-content">
+            <h3>Invited Talk: Another Presentation Title</h3>
+            <p>Workshop at Conference, City, Country</p>
+            <div class="talk-links">
+              <a href="#" class="pub-link">Slides</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="talk-item">
+          <div class="talk-date">Oct 2024</div>
+          <div class="talk-content">
+            <h3>Tutorial: Hands-On Workshop Title</h3>
+            <p>Conference Name, City, Country</p>
+            <div class="talk-links">
+              <a href="#" class="pub-link">Materials</a>
+              <a href="#" class="pub-link">Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="talk-item">
+          <div class="talk-date">Jun 2024</div>
+          <div class="talk-content">
+            <h3>Panel: Discussion on the Future of the Field</h3>
+            <p>Institution Name, City, Country</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-number">06</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-text">
+          <p>
+            I'm always happy to connect with fellow researchers, students,
+            and collaborators. Feel free to reach out!
+          </p>
+          <div class="contact-info">
+            <div class="contact-row">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13 2 4"/></svg>
+              <a href="mailto:your.email@university.edu">your.email@university.edu</a>
+            </div>
+            <div class="contact-row">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Department of Your Field, University Name</span>
+            </div>
+            <div class="contact-row">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+              <span>Office: Building Name, Room 123</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-socials">
+          <a href="#" class="social-card" aria-label="Google Scholar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+              <path d="M12 14l-8-5.5L12 3l8 5.5L12 14z"/>
+              <path d="M12 14l-3.5-2.4M12 14l3.5-2.4"/>
+              <path d="M6 10.5V17a6 6 0 0012 0v-6.5"/>
+            </svg>
+            <span>Google Scholar</span>
+          </a>
+          <a href="#" class="social-card" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="#" class="social-card" aria-label="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+              <path d="M4 4l11.73 16h4.27M20 4l-11.73 16H4"/>
+            </svg>
+            <span>Twitter / X</span>
+          </a>
+          <a href="#" class="social-card" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="28" height="28">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer id="footer">
+    <div class="container">
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+      <p class="footer-sub">Built with care. Content licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener" class="link">CC BY-NC 4.0</a>.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
