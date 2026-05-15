@@ -289,7 +289,8 @@ img { max-width: 100%; height: auto; }
 
 .hero-tagline {
   font-family: var(--font-serif);
-  font-size: 1.3rem;
+  font-size: 1.15rem;
+  line-height: 1.5;
   color: var(--color-text-light);
   margin-bottom: var(--space-md);
 }
