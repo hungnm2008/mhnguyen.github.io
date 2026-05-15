@@ -384,9 +384,24 @@ img { max-width: 100%; height: auto; }
   border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: var(--space-md);
-  max-height: 280px;
+  max-height: 190px;
   overflow-y: auto;
   width: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+}
+.hero-news::-webkit-scrollbar {
+  width: 4px;
+}
+.hero-news::-webkit-scrollbar-track {
+  background: transparent;
+}
+.hero-news::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+.hero-news::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent);
 }
 .hero-news h3 {
   font-size: 1rem;
