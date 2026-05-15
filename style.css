@@ -264,7 +264,7 @@ img { max-width: 100%; height: auto; }
   margin: 0 auto;
   padding: 0 var(--space-lg);
   display: grid;
-  grid-template-columns: 160px 1fr 1fr;
+  grid-template-columns: 160px auto 1fr;
   gap: var(--space-lg);
   align-items: center;
   justify-items: start;
