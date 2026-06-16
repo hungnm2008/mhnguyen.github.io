@@ -1,0 +1,46 @@
+# basic information
+name: M. Hung Nguyen
+profile-pic: assets/img/avatar.jpg
+pronunciation:
+pronunciation-emoji:
+
+# emoji indicator
+emoji:
+desc-emoji:
+
+# social links
+scholar: https://scholar.google.com/citations?user=rBAIfwgAAAAJ&hl=en
+researchgate:
+github: https://github.com/mhnguyenn
+youtube:
+resume:
+projects:
+location:
+codepen:
+orcid:
+contact: show
+linkedin: https://linkedin.com/in/hungnm2008
+
+# information for contact card
+dept: MPI-SWS
+lab: Machine Teaching Group
+email: manguyen@mpi-sws.org
+phone:
+website: https://mhnguyen.me/
+web-dns: mhnguyen.me
+
+# about me
+first-paragraph: I am a PhD student at the <a href="https://www.mpi-sws.org/" target="_blank" rel="noopener">Max Planck Institute for Software Systems</a>, as part of the <a href="https://ellis.eu/phd-postdoc" target="_blank" rel="noopener">ELLIS PhD Program</a> (50 students selected out of 1,700 candidates in 2022). I am supervised by <a href="https://machineteaching.mpi-sws.org/adishsingla.html" target="_blank" rel="noopener">Adish Singla</a>.
+second-paragraph: I hold an Erasmus Mundus Joint M.Sc. in Big Data Management and Analytics (Universit&eacute; Paris-Saclay, UPC Barcelona, ULB Brussels) and a B.Sc. in Computer Science from Vietnam National University, Hanoi (<em>High Distinction</em>). I was also a Research Intern at INRIA, supervised by <a href="https://scholar.google.com/citations?user=d_4MbDQAAAAJ&hl=en" target="_blank" rel="noopener">Isabelle Guyon</a> and <a href="https://www.semanticscholar.org/author/Lisheng-Sun-Hosoya/1414759964" target="_blank" rel="noopener">Lisheng Sun-Hosoya</a>, where I worked on meta-learning from learning curves.
+research-introduction: My research lies at the intersection of <code>Diversity & Creativity of LLMs</code>, <code>Generative AI for Education</code>, and <code>Reinforcement Learning & AutoML</code>, with a focus on developing methods that are both theoretically grounded and practically impactful.
+
+research-interests:
+
+  - field: Diversity & Creativity of LLMs
+    subfields: prompt optimization, diverse generation
+
+  - field: Generative AI for Education
+    subfields: programming tasks, student modeling, pedagogical feedback
+
+  - field: Reinforcement Learning & AutoML
+    subfields: meta-learning, curiosity-driven exploration

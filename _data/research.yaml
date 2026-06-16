@@ -1,0 +1,157 @@
+categories:
+
+  - data-filter: llm-diversity
+    category-name: LLM diversity
+
+  - data-filter: ai-education
+    category-name: AI for education
+
+  - data-filter: meta-learning
+    category-name: meta-learning
+
+
+projects:
+
+  - title: Enhancing Diversity of LLM-Generated Educational Tasks
+    system-name:
+    gif:
+    conference: Educational Data Mining (EDM) 2026
+    conference-web:
+    status:
+    authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
+    pdf:
+    code:
+    demo:
+    slides:
+    talk:
+    poster:
+    abstract-less:
+    abstract-more:
+    tag: more_edm2026
+    category: llm-diversity ai-education
+
+  - title: "Partnering with AI: A Pedagogical Feedback System for LLM Integration into Programming Education"
+    system-name:
+    gif:
+    conference: European Conference on Technology Enhanced Learning (ECTEL) 2025
+    conference-web:
+    status:
+    authors: Niklas Scholz, <u>M. Hung Nguyen</u>, Adish Singla, Tomohiro Nagashima
+    pdf: https://doi.org/10.1007/978-3-032-03873-9_31
+    code:
+    demo:
+    slides:
+    talk:
+    poster:
+    abstract-less:
+    abstract-more:
+    tag: more_ectel2025
+    category: ai-education
+
+  - title: Synthesizing High-Quality Programming Tasks with LLM-Based Expert and Student Agents
+    system-name:
+    gif:
+    conference: International Conference on Artificial Intelligence in Education (AIED) 2025
+    conference-web:
+    status:
+    authors: <u>M. Hung Nguyen</u>, Victor-Alexandru Padurean, Alkis Gotovos, Sebastian Tschiatschek, Adish Singla
+    pdf: https://doi.org/10.1007/978-3-031-98414-3_6
+    code:
+    demo:
+    slides:
+    talk:
+    poster:
+    abstract-less:
+    abstract-more:
+    tag: more_aied2025
+    category: ai-education
+
+  - title: Prompt Optimization Across Multiple Agents for Representing Diverse Human Populations
+    system-name:
+    gif:
+    conference: arXiv
+    conference-web:
+    status:
+    authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
+    pdf: https://arxiv.org/abs/2510.07064
+    code:
+    demo:
+    slides:
+    talk:
+    poster:
+    abstract-less:
+    abstract-more:
+    tag: more_diversity2025
+    category: llm-diversity
+
+  - title: "Large Language Models for In-Context Student Modeling: Synthesizing Student's Behavior in Visual Programming"
+    system-name:
+    gif:
+    conference: Educational Data Mining (EDM) 2024
+    conference-web:
+    status:
+    authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
+    pdf: https://openreview.net/forum?id=oImRJD6I7R
+    code:
+    demo:
+    slides:
+    talk:
+    poster:
+    abstract-less:
+    abstract-more:
+    tag: more_edm2024
+    category: ai-education
+
+  - title: Meta-learning from Learning Curves for Budget-Limited Algorithm Selection
+    system-name:
+    gif:
+    conference: Pattern Recognition Letters 185:225-231, 2024
+    conference-web:
+    status:
+    authors: <u>M. Hung Nguyen</u>, Lisheng Sun-Hosoya, Isabelle Guyon
+    pdf: https://doi.org/10.1016/j.patrec.2024.08.010
+    code:
+    demo:
+    slides:
+    talk:
+    poster:
+    abstract-less:
+    abstract-more:
+    tag: more_prl2024
+    category: meta-learning
+
+  - title: "NeurIPS'22 Cross-Domain MetaDL Challenge: Results and Lessons Learned"
+    system-name:
+    gif:
+    conference: NeurIPS Competition & Demo Track 2022
+    conference-web:
+    status:
+    authors: Dustin Carrion-Ojeda, et al. (incl. <u>M. Hung Nguyen</u>)
+    pdf: https://proceedings.mlr.press/v220/carrion-ojeda22a.html
+    code:
+    demo:
+    slides:
+    talk:
+    poster:
+    abstract-less:
+    abstract-more:
+    tag: more_neurips2022
+    category: meta-learning
+
+  - title: "Meta-learning from Learning Curves: Challenge Design and Baseline Results"
+    system-name:
+    gif:
+    conference: International Joint Conference on Neural Networks (IJCNN) 2022
+    conference-web:
+    status:
+    authors: <u>M. Hung Nguyen</u>, Lisheng Sun-Hosoya, Nathan Grinsztajn, Isabelle Guyon
+    pdf: https://doi.org/10.1109/IJCNN55064.2022.9892534
+    code:
+    demo:
+    slides:
+    talk:
+    poster:
+    abstract-less:
+    abstract-more:
+    tag: more_ijcnn2022
+    category: meta-learning
