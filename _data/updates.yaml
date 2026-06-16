@@ -4,6 +4,11 @@ updates:
     desc: Our paper on <hightlight>enhancing diversity of LLM-generated educational tasks</hightlight> was accepted at EDM 2026!
     time: 2026
 
+
+  - picture:
+    desc: Paper on <hightlight>diversifying generative agents</hightlight> accepted at PA@ICML 2025!
+    time: June 2025
+
   - picture:
     desc: Our paper on <hightlight>pedagogical feedback for LLMs</hightlight> in programming education was accepted at AIED 2025!
     time: June 2025
