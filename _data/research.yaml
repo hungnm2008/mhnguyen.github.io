@@ -30,6 +30,24 @@ projects:
     tag: more_edm2026
     category: llm-diversity ai-education
 
+  - title: Diversifying Multiple Generative Agents by Aligning with Human Populations
+    system-name:
+    gif:
+    conference: Pluralistic Alignment Workshop @ ICML 2025
+    conference-web:
+    status:
+    authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
+    pdf: https://openreview.net/forum?id=lXqAauVCs8
+    code:
+    demo:
+    slides:
+    talk:
+    poster:
+    abstract-less: We propose a framework for constructing a set of generative agents that collectively serve as faithful behavioral surrogates for a human population. Each agent is an LLM grounded in real human demonstrations, whose behavior is steered to match that of a specific subpopulation.
+    abstract-more: We formalize this as minimizing the representation error and show that this objective is submodular, enabling methods with approximation guarantees. Extensive experiments in educational and crowdsourcing domains demonstrate that our methods construct agent sets that more faithfully represent human populations than existing methods.
+    tag: more_paicml2025
+    category: llm-diversity
+
   - title: "Partnering with AI: A Pedagogical Feedback System for LLM Integration into Programming Education"
     system-name:
     gif:
