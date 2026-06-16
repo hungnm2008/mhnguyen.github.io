@@ -12,6 +12,24 @@ categories:
 
 projects:
 
+  - title: Diversifying Multiple Generative Agents by Aligning with Human Populations
+    system-name:
+    gif:
+    conference: Pluralistic Alignment Workshop @ ICML 2026
+    conference-web:
+    status:
+    authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
+    pdf: https://openreview.net/forum?id=lXqAauVCs8
+    code:
+    demo:
+    slides:
+    talk:
+    poster:
+    abstract-less: We propose a framework for constructing a set of generative agents that collectively serve as faithful behavioral surrogates for a human population. Each agent is an LLM grounded in real human demonstrations, whose behavior is steered to match that of a specific subpopulation.
+    abstract-more: We formalize this as minimizing the representation error and show that this objective is submodular, enabling methods with approximation guarantees. Extensive experiments in educational and crowdsourcing domains demonstrate that our methods construct agent sets that more faithfully represent human populations than existing methods.
+    tag: more_paicml2026
+    category: llm-diversity
+
   - title: Enhancing Diversity of LLM-Generated Educational Tasks
     system-name:
     gif:
@@ -30,23 +48,23 @@ projects:
     tag: more_edm2026
     category: llm-diversity ai-education
 
-  - title: Diversifying Multiple Generative Agents by Aligning with Human Populations
+  - title: Synthesizing High-Quality Programming Tasks with LLM-Based Expert and Student Agents
     system-name:
     gif:
-    conference: Pluralistic Alignment Workshop @ ICML 2025
+    conference: International Conference on Artificial Intelligence in Education (AIED) 2025
     conference-web:
     status:
-    authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
-    pdf: https://openreview.net/forum?id=lXqAauVCs8
+    authors: <u>M. Hung Nguyen</u>, Victor-Alexandru Padurean, Alkis Gotovos, Sebastian Tschiatschek, Adish Singla
+    pdf: https://doi.org/10.1007/978-3-031-98414-3_6
     code:
     demo:
     slides:
     talk:
     poster:
-    abstract-less: We propose a framework for constructing a set of generative agents that collectively serve as faithful behavioral surrogates for a human population. Each agent is an LLM grounded in real human demonstrations, whose behavior is steered to match that of a specific subpopulation.
-    abstract-more: We formalize this as minimizing the representation error and show that this objective is submodular, enabling methods with approximation guarantees. Extensive experiments in educational and crowdsourcing domains demonstrate that our methods construct agent sets that more faithfully represent human populations than existing methods.
-    tag: more_paicml2025
-    category: llm-diversity
+    abstract-less:
+    abstract-more:
+    tag: more_aied2025
+    category: ai-education
 
   - title: "Partnering with AI: A Pedagogical Feedback System for LLM Integration into Programming Education"
     system-name:
@@ -64,24 +82,6 @@ projects:
     abstract-less:
     abstract-more:
     tag: more_ectel2025
-    category: ai-education
-
-  - title: Synthesizing High-Quality Programming Tasks with LLM-Based Expert and Student Agents
-    system-name:
-    gif:
-    conference: International Conference on Artificial Intelligence in Education (AIED) 2025
-    conference-web:
-    status:
-    authors: <u>M. Hung Nguyen</u>, Victor-Alexandru Padurean, Alkis Gotovos, Sebastian Tschiatschek, Adish Singla
-    pdf: https://doi.org/10.1007/978-3-031-98414-3_6
-    code:
-    demo:
-    slides:
-    talk:
-    poster:
-    abstract-less:
-    abstract-more:
-    tag: more_aied2025
     category: ai-education
 
   - title: Prompt Optimization Across Multiple Agents for Representing Diverse Human Populations
