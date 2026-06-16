@@ -1,0 +1,11 @@
+# headers and icon 
+title: M. Hung Nguyen
+info: PhD Student @ MPI-SWS
+icon-pic: assets/img/favicon.png
+
+# exclude these items when generated website in _site/index.html
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - backup

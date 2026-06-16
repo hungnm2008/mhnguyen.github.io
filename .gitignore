@@ -1,7 +1,12 @@
-# Local/personal media (intentionally not tracked)
-media/
-images/profile.png
-images/profile.jpg
-images/profile.jpeg
-images/profile.webp
-images/avatar.png
+# Jekyll generated
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+vendor/
+
+# OS
+.DS_Store
+Thumbs.db
