@@ -25,8 +25,8 @@ projects:
     slides:
     talk:
     poster:
-    abstract-less: We propose a framework for constructing a set of generative agents that collectively serve as faithful behavioral surrogates for a human population. Each agent is an LLM grounded in real human demonstrations, whose behavior is steered to match that of a specific subpopulation.
-    abstract-more: We formalize this as minimizing the representation error and show that this objective is submodular, enabling methods with approximation guarantees. Extensive experiments in educational and crowdsourcing domains demonstrate that our methods construct agent sets that more faithfully represent human populations than existing methods.
+    abstract-less:
+    abstract-more:
     tag: more_paicml2026
     category: llm-diversity
 
@@ -83,24 +83,6 @@ projects:
     abstract-more:
     tag: more_ectel2025
     category: ai-education
-
-  - title: Prompt Optimization Across Multiple Agents for Representing Diverse Human Populations
-    system-name:
-    gif:
-    conference: arXiv
-    conference-web:
-    status:
-    authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
-    pdf: https://arxiv.org/abs/2510.07064
-    code:
-    demo:
-    slides:
-    talk:
-    poster:
-    abstract-less:
-    abstract-more:
-    tag: more_diversity2025
-    category: llm-diversity
 
   - title: "Large Language Models for In-Context Student Modeling: Synthesizing Student's Behavior in Visual Programming"
     system-name:
