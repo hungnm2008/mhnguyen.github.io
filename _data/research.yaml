@@ -126,7 +126,7 @@ projects:
     conference: Conference on Neural Information Processing Systems (NeurIPS) 2022
     conference-web:
     status:
-    authors: Dustin Carrion-Ojeda, et al. (incl. <u>M. Hung Nguyen</u>)
+    authors: Dustin Carrión-Ojeda, Mahbubul Alam, Sergio Escalera, Ahmed Farahat, Dipanjan Ghosh, Teresa Gonzalez Diaz, Chetan Gupta, Isabelle Guyon, Joël Roman Ky, Xian Yeow Lee, Xin Liu, Felix Mohr, <u>M. Hung Nguyen</u>, Emmanuel Pintelas, Stefan Roth, Simone Schaub-Meyer, Haozhe Sun, Ihsan Ullah, Joaquin Vanschoren, Lasitha Vidyaratne, Jiamin Wu, Xiaotian Yin
     pdf: https://proceedings.mlr.press/v220/carrion-ojeda23a/carrion-ojeda23a.pdf
     code:
     demo:
