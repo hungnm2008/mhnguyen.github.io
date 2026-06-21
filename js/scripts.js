@@ -149,6 +149,18 @@ document.getElementById('front_end_card').addEventListener('click', function() {
 });
 
 
+// Obfuscated email: decode at runtime to prevent crawler harvesting
+(function() {
+    var u = atob("bWFuZ3V5ZW4=");
+    var d = atob("bXBpLXN3cy5vcmc=");
+    var email = u + "@" + d;
+    var el = document.getElementById("email-display");
+    if (el) {
+        el.textContent = email;
+        el.href = "mailto:" + email;
+    }
+})();
+
 // Get all filter buttons and change their active status as user clicks
 var filterButtonsProject = document.querySelectorAll('#filters-project .filter-button'); 
 var filterButtonsGithub = document.querySelectorAll('#filters-resources .filter-button'); 
