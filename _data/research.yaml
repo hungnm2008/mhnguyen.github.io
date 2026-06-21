@@ -123,7 +123,7 @@ projects:
   - title: "NeurIPS'22 Cross-Domain MetaDL Challenge: Results and Lessons Learned"
     system-name:
     gif:
-    conference: NeurIPS Competition & Demo Track 2022
+    conference: Conference on Neural Information Processing Systems (NeurIPS) 2022
     conference-web:
     status:
     authors: Dustin Carrion-Ojeda, et al. (incl. <u>M. Hung Nguyen</u>)
