@@ -3,13 +3,13 @@ mini-projects:
   - title: Teaching Assistant
     system-name:
     gif:
-    event: Saarland University
+    event:
     event-web:
     team:
     post:
     code:
     demo:
-    description: "Generative AI for Education (WS 2025) · Generative AI for Creativity (SS 2026)"
+    description: Generative AI for Creativity (SS 2026), Saarland University<br>Generative AI for Education (WS 2025), Saarland University
     prize:
 
   - title: Reviewing
