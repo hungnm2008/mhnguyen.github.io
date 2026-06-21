@@ -9,19 +9,7 @@ mini-projects:
     post:
     code:
     demo:
-    description: <a href="https://machineteaching.mpi-sws.org/course-genaicreativity-s26.html" target="_blank" rel="noopener">Generative AI for Creativity (SS 2026), Saarland University</a><br><a href="https://machineteaching.mpi-sws.org/course-gaied-w25.html" target="_blank" rel="noopener">Generative AI for Education (WS 2025), Saarland University</a>
-    prize:
-
-  - title: Teaching Assistant
-    system-name:
-    gif:
-    event:
-    event-web:
-    team:
-    post:
-    code:
-    demo:
-    description: <a>Advanced Programming (2017-2019), Vietnam National University</a><br><a>Software Engineering (2017-2019), Vietnam National University</a><br><a>Object-Oriented Programming (2017-2019), Vietnam National University</a>
+    description: <a href="https://machineteaching.mpi-sws.org/course-genaicreativity-s26.html" target="_blank" rel="noopener">Generative AI for Creativity (SS 2026), Saarland University</a><br><a href="https://machineteaching.mpi-sws.org/course-gaied-w25.html" target="_blank" rel="noopener">Generative AI for Education (WS 2025), Saarland University</a><br>Advanced Programming (2017-2019), Vietnam National University<br>Software Engineering (2017-2019), Vietnam National University<br>Object-Oriented Programming (2017-2019), Vietnam National University
     prize:
 
   - title: Reviewing
