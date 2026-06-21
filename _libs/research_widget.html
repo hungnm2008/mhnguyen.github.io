@@ -1,9 +1,13 @@
 <div class="project" data-filter="{{ project.category }}">
     <div class="row mb-4">
+        {% if project.gif %}
         <div class="col-sm-4">
             <img width="100%" height="auto" class="w-full rounded-lg" src="{{ project.gif }}">
         </div>
         <div class="col-sm-8">
+        {% else %}
+        <div class="col-sm-12">
+        {% endif %}
             {% if project.system-name %} <b><i>{{ project.system-name }}</i>:</b> {% endif %}
             <b>{{ project.title }}</b>
             <br>

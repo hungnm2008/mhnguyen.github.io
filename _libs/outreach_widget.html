@@ -1,8 +1,12 @@
 <div class="row mb-4">
+    {% if mini-project.gif %}
     <div class="col-sm-4">
-        {% if mini-project.gif %}<img width="100%" height="auto" class="w-full rounded-lg" src="{{ mini-project.gif }}">{% endif %}
+        <img width="100%" height="auto" class="w-full rounded-lg" src="{{ mini-project.gif }}">
     </div>
     <div class="col-sm-8">
+    {% else %}
+    <div class="col-sm-12">
+    {% endif %}
         {% if mini-project.system-name %} <b><i>{{ mini-project.system-name }}</i>:</b> {% endif %}
         <b>{{ mini-project.title }}</b>
         <br>
