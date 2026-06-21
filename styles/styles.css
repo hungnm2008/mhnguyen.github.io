@@ -263,6 +263,7 @@ code {
     width: 152px;
     height: 152px;
     border-radius: 50%;
+    object-fit: cover;
     position: absolute;
     top: 50%;
     left: 50%;
