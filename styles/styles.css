@@ -38,6 +38,11 @@ hightlight {
     transition: 0.5s;
 }
 
+
+/* Page container width */
+.container {
+    max-width: 900px;
+}
 /* Light theme style for user selection */
 .light-theme ::selection {
     background-color: #ffb699;
