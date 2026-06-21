@@ -11,10 +11,8 @@ $(window).scroll(function() {
 
 btn.on('click', function(e) {
     e.preventDefault();
-    const speechBalloon = document.querySelector('.speech-balloon');
     const clickSound = new Audio('assets/sounds/collision_sound.wav');
     $('html, body').animate({scrollTop:0}, '300');
-    speechBalloon.innerText = 'back to top!';
     clickSound.play();
 });
 
@@ -66,7 +64,6 @@ function scrollToTopDiv(divTag) {
 function toggleTheme() {
     const bodyEl = document.body;
     const buttonEl = document.querySelector('.toggle-theme-button');
-    const speechBalloon = document.querySelector('.speech-balloon');
     const clickSound = new Audio('assets/sounds/switch_sound.wav');
 
     if (bodyEl.classList.contains('light-theme')) {
@@ -75,7 +72,6 @@ function toggleTheme() {
         buttonEl.classList.remove('light-theme');
         buttonEl.classList.add('dark-theme');
         buttonEl.innerText = '☀️';
-        speechBalloon.innerText = 'lights turned off!';
         clickSound.play();
     } else {
         bodyEl.classList.remove('dark-theme');
@@ -83,7 +79,6 @@ function toggleTheme() {
         buttonEl.classList.remove('dark-theme');
         buttonEl.classList.add('light-theme');
         buttonEl.innerText = '🌙';
-        speechBalloon.innerText = 'lights turned on!';
         clickSound.play();
     }
 }
@@ -119,81 +114,6 @@ function initializeOwlCarousel() {
     });
 }
 
-// Touch and mouse event listeners
-let isDragging = false;
-let isMobile = 'ontouchstart' in window;
-let startEvent = isMobile ? 'touchstart' : 'mousedown';
-let moveEvent = isMobile ? 'touchmove' : 'mousemove';
-let endEvent = isMobile ? 'touchend' : 'mouseup';
-
-
-// Capture mouse down (desktop) or touch start (mobile) events
-popupIconContainer.addEventListener(startEvent, (e) => {
-    e.preventDefault();
-    isDragging = true;
-    let clientX = isMobile ? e.touches[0].clientX : e.clientX;
-    let clientY = isMobile ? e.touches[0].clientY : e.clientY;
-
-    startX = clientX;
-    startY = clientY;
-    originalX = popupIconContainer.getBoundingClientRect().left;
-    originalY = popupIconContainer.getBoundingClientRect().top;
-    dismissalArea.style.display = 'flex';
-    
-    // Hide the speech balloon as users start dragging and drag the icon
-    document.querySelector('.speech-balloon').classList.add('hidden');
-});
-
-
-// Capture mouse move (desktop) or touch move (mobile) events
-document.addEventListener(moveEvent, (e) => {
-    if (!isDragging) {
-        return;
-    }
-    
-    let clientX = isMobile ? e.touches[0].clientX : e.clientX;
-    let clientY = isMobile ? e.touches[0].clientY : e.clientY;
-
-    let x = originalX + (clientX - startX);
-    let y = originalY + (clientY - startY);
-    popupIconContainer.style.left = `${x}px`;
-    popupIconContainer.style.bottom = `calc(100% - ${y}px - ${popupIconContainer.offsetHeight}px)`;
-});
-
-
-// Capture mouse up (desktop) or touch end (mobile) events
-document.addEventListener(endEvent, (e) => {
-    const clickSound = new Audio('assets/sounds/disappear_sound.wav');
-
-    if (!isDragging) {
-        return;
-    }
-
-    let clientX = isMobile ? e.changedTouches[0].clientX : e.clientX;
-    let clientY = isMobile ? e.changedTouches[0].clientY : e.clientY;
-    let centerX = window.innerWidth / 2;
-    let centerY = window.innerHeight;
-
-    // Check if icon is near the middle bottom dismissal area
-    if (Math.abs(clientX - centerX) < 50 && Math.abs(clientY - centerY) < 100) {
-        popupIconContainer.classList.add('hidden');
-        clickSound.play();
-    }
-
-    dismissalArea.style.display = 'none';
-    isDragging = false;
-});
-
-
-// Hide speech balloon when scrolling down
-window.addEventListener('scroll', function() {
-    let scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    if (scrollPosition > 300) {
-        document.querySelector('.speech-balloon').classList.add('hidden');
-    } else {
-        document.querySelector('.speech-balloon').classList.remove('hidden');
-    }
-});
 
 
 // Update progress bar as user scrolls down
@@ -232,7 +152,6 @@ document.getElementById('front_end_card').addEventListener('click', function() {
 // Get all filter buttons and change their active status as user clicks
 var filterButtonsProject = document.querySelectorAll('#filters-project .filter-button'); 
 var filterButtonsGithub = document.querySelectorAll('#filters-resources .filter-button'); 
-var speechBalloon = document.querySelector('.speech-balloon');
 
 filterButtonsProject.forEach(function(filterButtonProject) {
     filterButtonProject.addEventListener('click', function() {
@@ -240,12 +159,6 @@ filterButtonsProject.forEach(function(filterButtonProject) {
             flrbtn.classList.remove('active');
         });
         this.classList.add('active');
-        if (this.textContent === "perception + manipulation") {
-            speechBalloon.innerText = 'see RoPM projects!';
-        } else {
-            speechBalloon.innerText = 'see ' + this.textContent + ' projects!';
-        }
-        speechBalloon.classList.remove('hidden');
     });
 });
 
@@ -255,11 +168,8 @@ filterButtonsGithub.forEach(function(filterButtonGithub) {
             flrbtn.classList.remove('active');
         });
         this.classList.add('active');
-        speechBalloon.innerText = 'see ' + this.textContent + ' repos!';
-        speechBalloon.classList.remove('hidden');
     });
 });
-
 
 // Function to update Isotope layout with smooth transitions
 function updateLayout(collapseElement, isExpanding) {
@@ -600,7 +510,6 @@ $(document).ready(function() {
 // Dark/Light theme based on predefined time
 document.addEventListener('DOMContentLoaded', function() {
     const buttonEl = document.querySelector('.toggle-theme-button');
-    const speechBalloon = document.querySelector('.speech-balloon');
     var currentHour = new Date().getHours();
 
     // Dark theme is used between 7 PM of last day
@@ -608,11 +517,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (currentHour > 19 || currentHour <= 7) {
         document.body.classList.add('dark-theme');
         buttonEl.innerText = '☀️';
-        speechBalloon.innerText = 'it\'s night, lights off!';
     } else {
         document.body.classList.add('light-theme');
         buttonEl.innerText = '🌙';
-        speechBalloon.innerText = 'it\'s day, lights on!';
     }
 });
 
