@@ -524,9 +524,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// Automatically update year in footer
-document.getElementById("currentYear").textContent = new Date().getFullYear();
-
 
 // Canvas for particle moves
 const canvas = document.getElementById('canvas');
