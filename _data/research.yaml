@@ -19,7 +19,7 @@ projects:
     conference-web:
     status:
     authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
-    pdf: https://openreview.net/forum?id=lXqAauVCs8
+    pdf: https://openreview.net/pdf?id=lXqAauVCs8
     code:
     demo:
     slides:
@@ -37,7 +37,7 @@ projects:
     conference-web:
     status:
     authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
-    pdf:
+    pdf: https://arxiv.org/pdf/2512.23601
     code:
     demo:
     slides:
