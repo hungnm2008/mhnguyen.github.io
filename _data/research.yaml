@@ -105,7 +105,7 @@ projects:
   - title: Meta-learning from Learning Curves for Budget-Limited Algorithm Selection
     system-name:
     gif:
-    conference: Pattern Recognition Letters 185:225-231, 2024
+    conference: Pattern Recognition Letters
     conference-web:
     status:
     authors: <u>M. Hung Nguyen</u>, Lisheng Sun-Hosoya, Isabelle Guyon
