@@ -1,5 +1,5 @@
 <div class="news-card">
-    <img src="{{ update.picture }}" class="w-full rounded-lg">
+    {% if update.picture %}<img src="{{ update.picture }}" class="w-full rounded-lg">{% endif %}
     <div class="news-desc">{{ update.desc }}</div>
     <div class="news-time">{{ update.time }}</div>
 </div>
