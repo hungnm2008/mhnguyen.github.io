@@ -1,6 +1,10 @@
 updates:
 
   - picture:
+    desc: Attending <hightlight>ICML and EDM</hightlight> to present our work (<i class="fa fa-map-marker-alt"></i> Seoul, South Korea).
+    time: July 2026
+
+  - picture:
     desc: Our paper on <hightlight>enhancing diversity of LLM-generated educational tasks</hightlight> was accepted at EDM 2026!
     time: 2026
 
