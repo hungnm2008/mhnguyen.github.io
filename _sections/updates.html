@@ -5,9 +5,9 @@
     <div class="col">
         <h2 clss="mb-5">📜 News</h2>
         <p></p>
-        <div class="owl-carousel owl-theme">
+        <div class="news-list">
             {% for update in site.data.updates.updates %}
-                {% include_relative _libs/updates_widget.html %}
+                <p class="news-line"><span class="news-line-time">{{ update.time }}:</span> {{ update.desc }}</p>
             {% endfor %}
         </div>
         <p></p>

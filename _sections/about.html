@@ -76,12 +76,16 @@
         <p></p>
         {{ site.data.about.second-paragraph }}      
         <p></p>
+        {% if site.data.about.research-introduction or site.data.about.research-interests.size > 0 %}
         <div class="codebox">
-            {{ site.data.about.research-introduction }}
-            <p></p> 
+            {% if site.data.about.research-introduction %}
+                {{ site.data.about.research-introduction }}
+                <p></p> 
+            {% endif %}
             {% for interest in site.data.about.research-interests %}
                 {% include_relative _libs/about_widget.html %}
             {% endfor %}
         </div>
+        {% endif %}
     </div>
 </div>
