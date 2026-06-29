@@ -1,50 +1,49 @@
 updates:
 
   - picture:
-    desc: Attending <hightlight>ICML and EDM</hightlight> to present our work (<i class="fa fa-map-marker-alt"></i> Seoul, South Korea).
+    desc: Presenting our work at <hightlight>ICML 2026</hightlight> and <hightlight>EDM 2026</hightlight> (<i class="fa fa-map-marker-alt"></i> Seoul, South Korea).
     time: Jul 2026
 
   - picture:
-    desc: Our paper on <hightlight>enhancing diversity of LLM-generated educational tasks</hightlight> was accepted at EDM 2026!
-    time: 2026
-
-
-  - picture:
-    desc: Paper on <hightlight>diversifying generative agents</hightlight> accepted at PA@ICML 2026!
-    time: 2026
-
+    desc: Our work on <hightlight>enhancing diversity of LLM-generated educational tasks</hightlight> was accepted at <hightlight>EDM 2026</hightlight>!
+    time: May 2026
 
   - picture:
-    desc: Research visiting at the <hightlight>University of Vienna</hightlight>, working with <a href="https://tschiatschek.net/" target="_blank" rel="noopener">Sebastian Tschiatschek</a> and funded by <hightlight>ELSA/ELLIS</hightlight> (<i class="fa fa-map-marker-alt"></i> Vienna, Austria).
+    desc: Our work on <hightlight>diversifying multiple generative agents</hightlight> was accepted at <hightlight>Pluralistic Alignment @ ICML 2026</hightlight>!
+    time: May 2026
+
+  - picture:
+    desc: Research visit at the <hightlight>University of Vienna</hightlight>, working with <a href="https://tschiatschek.net/" target="_blank" rel="noopener">Sebastian Tschiatschek</a> and funded by <hightlight>ELSA/ELLIS</hightlight> (<i class="fa fa-map-marker-alt"></i> Vienna, Austria).
     time: Mar 2026
 
   - picture:
-    desc: Our paper on <hightlight>pedagogical feedback for LLMs</hightlight> in programming education was accepted at AIED 2025!
+    desc: Our work on <hightlight>pedagogical feedback for LLM integration into programming education</hightlight> was accepted at <hightlight>ECTEL 2025</hightlight>!
     time: Jun 2025
 
+  - picture:
+    desc: Our work on <hightlight>synthesizing high-quality programming tasks with LLM-based expert and student agents</hightlight> was accepted at <hightlight>AIED 2025</hightlight>!
+    time: Apr 2025
 
   - picture:
-    desc: Paper accepted at <hightlight>EDM 2024</hightlight> on student modeling with LLMs.
-    time: Sep 2024
-
-  - picture:
-    desc: Paper accepted at <hightlight>Pattern Recognition Letters</hightlight> on meta-learning.
+    desc: Our work on <hightlight>meta-learning from learning curves</hightlight> was accepted at <hightlight>Pattern Recognition Letters 2024</hightlight>!
     time: Aug 2024
 
+  - picture:
+    desc: Our work on <hightlight>in-context student modeling with LLMs</hightlight> was accepted at <hightlight>EDM 2024</hightlight>.
+    time: Mar 2024
 
   - picture:
     desc: Started working at <hightlight>MPI-SWS</hightlight>, as part of the <a href="https://ellis.eu/research/phd-postdoc" target="_blank" rel="noopener">ELLIS PhD program</a>.
     time: Sep 2022
 
   - picture:
-    desc: Meta-learning challenge paper accepted at <hightlight>IJCNN</hightlight>.
+    desc: Our work on the <hightlight>NeurIPS Cross-Domain MetaDL Challenge</hightlight> was accepted at <hightlight>NeurIPS 2022</hightlight>.
     time: Jul 2022
 
-
   - picture:
-    desc: NeurIPS Cross-Domain <hightlight>MetaDL challenge</hightlight> results paper accepted.
+    desc: Our meta-learning challenge paper was accepted at <hightlight>IJCNN 2022</hightlight>.
     time: Apr 2022
 
   - picture:
     desc: Awarded the <hightlight>Erasmus Mundus Joint Master Scholarship</hightlight>.
-    time: 2019
+    time: Feb 2019
