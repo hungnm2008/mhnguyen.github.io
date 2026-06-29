@@ -22,13 +22,6 @@ updates:
     desc: Our paper on <hightlight>pedagogical feedback for LLMs</hightlight> in programming education was accepted at AIED 2025!
     time: June 2025
 
-  - picture:
-    desc: Giving an invited talk at the <hightlight>MPI-SWS retreat</hightlight> on diversity in LLMs.
-    time: May 2025
-
-  - picture:
-    desc: Paper on <hightlight>curiosity-driven exploration</hightlight> accepted at ICLR 2025.
-    time: January 2025
 
   - picture:
     desc: Paper accepted at <hightlight>EDM 2024</hightlight> on student modeling with LLMs.
@@ -38,9 +31,6 @@ updates:
     desc: Paper accepted at <hightlight>Pattern Recognition Letters</hightlight> on meta-learning.
     time: August 2024
 
-  - picture:
-    desc: Awarded the <hightlight>ELLIS PhD Fellowship</hightlight>.
-    time: 2022
 
   - picture:
     desc: NeurIPS Cross-Domain <hightlight>MetaDL challenge</hightlight> results paper accepted.
