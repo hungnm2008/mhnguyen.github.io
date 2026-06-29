@@ -678,6 +678,9 @@ div.desc {
 /* Styles for update lines */
 .news-list {
     margin: 0;
+    max-height: 240px;
+    overflow-y: auto;
+    padding-right: 0.5rem;
 }
 
 .news-line {
