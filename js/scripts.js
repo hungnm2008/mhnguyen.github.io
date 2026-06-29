@@ -526,20 +526,12 @@ $(document).ready(function() {
 });
 
 
-// Dark/Light theme based on predefined time
+// Start in light theme by default; the button still toggles dark/light manually.
 document.addEventListener('DOMContentLoaded', function() {
     const buttonEl = document.querySelector('.toggle-theme-button');
-    var currentHour = new Date().getHours();
 
-    // Dark theme is used between 7 PM of last day
-    // to 7 AM next day. Otherwise, use light theme
-    if (currentHour > 19 || currentHour <= 7) {
-        document.body.classList.add('dark-theme');
-        buttonEl.innerText = '☀️';
-    } else {
-        document.body.classList.add('light-theme');
-        buttonEl.innerText = '🌙';
-    }
+    document.body.classList.add('light-theme');
+    buttonEl.innerText = '🌙';
 });
 
 
