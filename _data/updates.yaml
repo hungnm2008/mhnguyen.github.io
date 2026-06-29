@@ -1,7 +1,7 @@
 updates:
 
   - picture:
-    desc: Presenting our work at <hightlight>ICML 2026</hightlight> and <hightlight>EDM 2026</hightlight> (<i class="fa fa-map-marker-alt"></i> Seoul, South Korea).
+    desc: Presenting our work at <hightlight>ICML 2026</hightlight> and <hightlight>EDM 2026</hightlight> (<i class="fa fa-map-marker-alt"></i> Seoul, South Korea)!
     time: Jul 2026
 
   - picture:
@@ -13,7 +13,7 @@ updates:
     time: May 2026
 
   - picture:
-    desc: Research visit at <a href="https://tschiatschek.net/" target="_blank" rel="noopener">Sebastian Tschiatschek</a>'s lab, funded by <hightlight>ELSA/ELLIS</hightlight> (<i class="fa fa-map-marker-alt"></i> Vienna, Austria).
+    desc: Research visit at <a href="https://tschiatschek.net/" target="_blank" rel="noopener">Sebastian Tschiatschek</a>'s lab, funded by <hightlight>ELSA/ELLIS</hightlight> (<i class="fa fa-map-marker-alt"></i> Vienna, Austria)!
     time: Mar 2026
 
   - picture:
@@ -29,21 +29,25 @@ updates:
     time: Aug 2024
 
   - picture:
-    desc: Our work was accepted at <hightlight>EDM 2024</hightlight>.
+    desc: Our work was accepted at <hightlight>EDM 2024</hightlight>!
     time: Mar 2024
 
   - picture:
-    desc: Started working at <hightlight>MPI-SWS</hightlight>, as part of the <a href="https://ellis.eu/research/phd-postdoc" target="_blank" rel="noopener">ELLIS PhD program</a>.
+    desc: Started working at <hightlight>MPI-SWS</hightlight>, as part of the <a href="https://ellis.eu/research/phd-postdoc" target="_blank" rel="noopener">ELLIS PhD program</a>!
     time: Sep 2022
 
   - picture:
-    desc: Our work was accepted at <hightlight>NeurIPS 2022</hightlight>.
+    desc: Our work was accepted at <hightlight>NeurIPS 2022</hightlight>!
     time: Jul 2022
 
   - picture:
-    desc: Our work was accepted at <hightlight>IJCNN 2022</hightlight>.
+    desc: Our work was accepted at <hightlight>IJCNN 2022</hightlight>!
     time: Apr 2022
 
   - picture:
-    desc: Awarded the <hightlight>Erasmus Mundus Joint Master Scholarship</hightlight>.
+    desc: Obtained my <hightlight>M.Sc. in Big Data Management and Analytics</hightlight>!
+    time: Sep 2021
+
+  - picture:
+    desc: Awarded the <hightlight>Erasmus Mundus Joint Master Scholarship</hightlight>!
     time: Feb 2019
