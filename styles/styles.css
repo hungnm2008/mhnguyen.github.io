@@ -335,13 +335,13 @@ code {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 2.6rem;
-    width: 2.6rem;
+    height: 1.75rem;
+    width: 1.75rem;
     color: #495057; 
     border-radius: 100%;
-    font-size: 1.25rem;
-    margin-right: 0.1rem;
-    padding-top: 2px;
+    font-size: 1rem;
+    margin-right: 0.03rem;
+    padding-top: 1px;
     transition: transform 0.3s;
 }
 .social-icons .social-icon:hover {
@@ -352,6 +352,7 @@ code {
 }
 .social-icons {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
