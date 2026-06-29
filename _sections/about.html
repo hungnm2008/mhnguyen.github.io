@@ -72,10 +72,14 @@
             {% if site.data.about.pronunciation-emoji %} <span id="volumeEmoji" role="button"> {{ site.data.about.pronunciation-emoji }} </span> {% endif %}
         </h2>
         <p></p>
-        {{ site.data.about.first-paragraph }}
-        <p></p>
-        {{ site.data.about.second-paragraph }}      
-        <p></p>
+        {% if site.data.about.first-paragraph %}
+            {{ site.data.about.first-paragraph }}
+            <p></p>
+        {% endif %}
+        {% if site.data.about.second-paragraph %}
+            {{ site.data.about.second-paragraph }}
+            <p></p>
+        {% endif %}
         {% if site.data.about.research-introduction or site.data.about.research-interests.size > 0 %}
         <div class="codebox">
             {% if site.data.about.research-introduction %}
