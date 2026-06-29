@@ -18,10 +18,13 @@ btn.on('click', function(e) {
 
 
 // Play pronunciation audio when the emoji is clicked
-document.getElementById('volumeEmoji').addEventListener('click', function() {
-    const pronunicationAudio = new Audio('assets/sounds/khang.mp3');
-    pronunicationAudio.play();
-});
+const volumeEmoji = document.getElementById('volumeEmoji');
+if (volumeEmoji) {
+    volumeEmoji.addEventListener('click', function() {
+        const pronunicationAudio = new Audio('assets/sounds/khang.mp3');
+        pronunicationAudio.play();
+    });
+}
 
 
 // Toggle navigation menu bar
@@ -336,8 +339,12 @@ function initializeIsotopeProjects() {
 document.addEventListener('DOMContentLoaded', () => {
 
     const container = document.getElementById('github-cards');
-    const repoElements = container.querySelectorAll('div[data-url]');
+    if (!container) {
+        return;
+    }
 
+    const repoElements = container.querySelectorAll('div[data-url]');
+ 
     repoElements.forEach(repoElement => {
         const repoUrl = repoElement.getAttribute('data-url');
         
