@@ -221,7 +221,7 @@ $('.collapse').on('show.bs.collapse', function () {
 
 
 // Modified from https://codepen.io/SohRonery/pen/wvvBLyP
-var itemsPerPageDefault = 5;
+var itemsPerPageDefault = 100;
 var currentNumberPages = 1;
 var currentPage = 1;
 var currentFilter = '*';
@@ -257,6 +257,10 @@ function updatePagerProjects() {
     var $isotopePager = ($('.' + pagerClass).length == 0 ) ? $('<div class="' + pagerClass + '"></div>') : $('.' + pagerClass);
     $isotopePager.html('');
 
+    if (currentNumberPages <= 1) {
+        $isotopePager.remove();
+        return;
+    }
     var $previous = $('<button class="pager" id="previous-page">&#8592; previous</button>');
     $previous.click(function() {
         if (currentPage > 1) {
