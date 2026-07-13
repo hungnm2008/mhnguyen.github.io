@@ -119,21 +119,3 @@ projects:
     abstract-more:
     tag: more_neurips2022
     category: meta-learning
-
-  - title: "Meta-learning from Learning Curves: Challenge Design and Baseline Results"
-    system-name:
-    gif:
-    conference: International Joint Conference on Neural Networks (IJCNN) 2022
-    conference-web:
-    status:
-    authors: <u>M. Hung Nguyen</u>, Lisheng Sun-Hosoya, Nathan Grinsztajn, Isabelle Guyon
-    pdf: https://doi.org/10.1109/IJCNN55064.2022.9892534
-    code:
-    demo:
-    slides:
-    talk:
-    poster:
-    abstract-less:
-    abstract-more:
-    tag: more_ijcnn2022
-    category: meta-learning
