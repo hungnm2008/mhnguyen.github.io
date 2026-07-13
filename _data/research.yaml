@@ -15,6 +15,24 @@ projects:
   - title: Diversifying Multiple Generative Agents by Aligning with Human Populations
     system-name:
     gif:
+    conference: Conference on Language Modeling (COLM) 2026
+    conference-web:
+    status:
+    authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
+    pdf:
+    code:
+    demo:
+    slides:
+    talk:
+    poster:
+    abstract-less:
+    abstract-more:
+    tag: more_colm2026
+    category: llm-diversity
+
+  - title: Diversifying Multiple Generative Agents by Aligning with Human Populations
+    system-name:
+    gif:
     conference: Pluralistic Alignment Workshop @ ICML 2026
     conference-web:
     status:
