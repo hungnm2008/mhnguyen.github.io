@@ -43,6 +43,19 @@ hightlight {
 .container {
     max-width: 900px;
 }
+
+#updates h2,
+#research h2,
+#outreach h2 {
+    font-size: 1.45rem;
+    margin-bottom: 1.25rem !important;
+}
+
+#research .project,
+#outreach .row {
+    font-size: 0.92rem;
+    line-height: 1.35;
+}
 /* Light theme style for user selection */
 .light-theme ::selection {
     background-color: #ffb699;
@@ -681,9 +694,9 @@ div.desc {
 }
 
 .news-line {
-    margin: 0 0 0.45rem 0;
-    font-size: 15px;
-    line-height: 1.5;
+    margin: 0 0 0.35rem 0;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 .news-line-time {
