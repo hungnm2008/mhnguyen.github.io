@@ -30,24 +30,6 @@ projects:
     tag: more_colm2026
     category: llm-diversity
 
-  - title: Diversifying Multiple Generative Agents by Aligning with Human Populations
-    system-name:
-    gif:
-    conference: Pluralistic Alignment Workshop @ ICML 2026
-    conference-web:
-    status:
-    authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
-    pdf: https://openreview.net/pdf?id=lXqAauVCs8
-    code:
-    demo:
-    slides:
-    talk:
-    poster:
-    abstract-less:
-    abstract-more:
-    tag: more_paicml2026
-    category: llm-diversity
-
   - title: Enhancing Diversity of LLM-Generated Educational Tasks
     system-name:
     gif:
@@ -82,24 +64,6 @@ projects:
     abstract-less:
     abstract-more:
     tag: more_aied2025
-    category: ai-education
-
-  - title: "Partnering with AI: A Pedagogical Feedback System for LLM Integration into Programming Education"
-    system-name:
-    gif:
-    conference: European Conference on Technology Enhanced Learning (ECTEL) 2025
-    conference-web:
-    status:
-    authors: Niklas Scholz, <u>M. Hung Nguyen</u>, Adish Singla, Tomohiro Nagashima
-    pdf: https://arxiv.org/pdf/2507.00406
-    code:
-    demo:
-    slides:
-    talk:
-    poster:
-    abstract-less:
-    abstract-more:
-    tag: more_ectel2025
     category: ai-education
 
   - title: "Large Language Models for In-Context Student Modeling: Synthesizing Student's Behavior in Visual Programming"
