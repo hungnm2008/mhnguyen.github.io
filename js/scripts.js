@@ -246,7 +246,7 @@ function filterCategoryProjects(category) {
 function showPageProjects(n) {
     currentPage = n;
     var category = '.project';
-        category += ( currentFilter != '*' ) ? '[' + filterAtribute + '="' + currentFilter + '"]' : '';
+        category += ( currentFilter != '*' ) ? '[' + filterAtribute + '~="' + currentFilter + '"]' : '';
         category += '[' + pageAtribute + '="' + currentPage+'"]';
     filterCategoryProjects(category);
 }
@@ -302,7 +302,7 @@ function setPaginationProjects() {
         var item = 1;
         var page = 1;
         var category = '.project';
-            category += ( currentFilter != '*' ) ? '[' + filterAtribute + '="' + currentFilter + '"]' : '';
+            category += ( currentFilter != '*' ) ? '[' + filterAtribute + '~="' + currentFilter + '"]' : '';
         
         $projects.children(category).each(function() {
             if (item > itemsPerPageDefault) {
