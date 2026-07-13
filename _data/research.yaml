@@ -1,13 +1,13 @@
 categories:
 
   - data-filter: llm-diversity
-    category-name: LLM diversity
+    category-name: LLM Diversity
 
   - data-filter: ai-education
-    category-name: AI for education
+    category-name: AI for Education
 
   - data-filter: meta-learning
-    category-name: meta-learning
+    category-name: Meta-Learning
 
 
 projects:

@@ -6,7 +6,7 @@
         <h2 clss="mb-5">📚 Selected Publications</h2>
         <p></p>
         <div id="filters-project">
-            <button class="filter-button active" data-filter="*">all</button>
+            <button class="filter-button active" data-filter="*">All</button>
             {% for category in site.data.research.categories %}
                 <button class="filter-button" data-filter="{{ category.data-filter }}">{{ category.category-name }}</button>
             {% endfor %}
