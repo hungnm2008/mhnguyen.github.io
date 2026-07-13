@@ -477,6 +477,10 @@ code {
     margin-right: 0.35rem;
 }
 
+.pdf-icon-disabled {
+    opacity: 0.45;
+}
+
 
 /* Styles for filter buttons */
 #filters-project .filter-button {

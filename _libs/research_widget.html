@@ -9,7 +9,7 @@
         <div class="col-sm-12">
         {% endif %}
             {% if project.system-name %} <b><i>{{ project.system-name }}</i>:</b> {% endif %}
-            {% if project.pdf %}<a href="{{ project.pdf }}" target="_blank" rel="noopener" class="pdf-icon" aria-label="PDF for {{ project.title }}" title="PDF"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a> {% endif %}
+            {% if project.pdf %}<a href="{{ project.pdf }}" target="_blank" rel="noopener" class="pdf-icon" aria-label="PDF for {{ project.title }}" title="PDF"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>{% else %}<span class="pdf-icon pdf-icon-disabled" aria-label="PDF not yet available" title="PDF coming soon"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></span>{% endif %}
             <b>{{ project.title }}</b>
             <br>
             <i><a href="{{ project.conference-web }}" target="_blank" rel="noopener">{{ project.conference }}</a></i> 
