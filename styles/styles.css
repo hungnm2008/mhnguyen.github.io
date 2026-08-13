@@ -2,6 +2,7 @@
 body {
     line-height: 1.45;
     font-family: 'Inconsolata', monospace;
+    font-size: 1.0625rem; /* 17px, slightly above Bootstrap's 16px default */
 }
 
 body.light-theme {
