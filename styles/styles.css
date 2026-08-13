@@ -1,6 +1,7 @@
 /* Document body styles */
 body {
     line-height: 1.45;
+    font-family: 'Inconsolata', monospace;
 }
 
 body.light-theme {
