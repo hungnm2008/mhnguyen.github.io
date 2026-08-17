@@ -54,6 +54,7 @@ hightlight {
 #research h2,
 #outreach h2 {
     font-size: 1.45rem;
+    font-weight: bold;
 }
 
 /* Light theme style for user selection */
