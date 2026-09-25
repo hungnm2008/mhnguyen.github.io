@@ -1,0 +1,323 @@
+% Don't like 10pt? Try 11pt or 12pt
+\documentclass[10pt]{article}
+
+% The automated optical recognition software used to digitize resume
+% information works best with fonts that do not have serifs. This
+% command uses a sans serif font throughout. Uncomment both lines (or at
+% least the second) to restore a Roman font (i.e., a font with serifs).
+%\usepackage{times}
+%\renewcommand{\familydefault}{\sfdefault}
+
+% This is a helpful package that puts math inside length specifications
+\usepackage{calc}
+\usepackage{needspace}
+\usepackage{comment}
+\usepackage{eurosym}
+% Simpler bibsection for CV sections
+% (thanks to natbib for inspiration)
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{1em} %1em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newenvironment{bibsection}%
+        {\begin{enumerate}{}{%
+%        {\begin{list}{}{%
+       \setlength{\leftmargin}{\bibhang}%
+       \setlength{\itemindent}{-\leftmargin}%
+       \setlength{\itemsep}{\bibsep}%
+       \setlength{\parsep}{\z@}%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{enumerate}\vspace{-.6\baselineskip}}
+%        {\end{list}\vspace{-.6\baselineskip}}
+\makeatother
+
+% Full-width letter-paper layout.
+\usepackage[paper=letterpaper,margin=1in]{geometry}
+
+%% More layout: Get rid of indenting throughout entire document
+\setlength{\parindent}{0in}
+
+\usepackage[shortlabels]{enumitem}
+
+%% Reference the last page in the page number
+%
+% NOTE: comment the +LP line and uncomment the -LP line to have page
+%       numbers without the ``of ##'' last page reference)
+%
+% NOTE: uncomment the \pagestyle{empty} line to get rid of all page
+%       numbers (make sure includefoot is commented out above)
+%
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+%\pagestyle{empty}      % Uncomment this to get rid of page numbers
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\arabic{page} of \protect\pageref*{LastPage}}
+
+% Finally, give us PDF bookmarks
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+            linkcolor=darkblue,urlcolor=darkblue,
+            anchorcolor=darkblue,citecolor=darkblue}
+
+\hypersetup{
+    colorlinks=true,
+    citecolor=blue,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Manh Hung Nguyen - Curriculum Vitae},
+    pdfauthor={Manh Hung Nguyen},
+    pdfpagemode=FullScreen,
+}
+%%%%%%%%%%%%%%%%%%%%%%%% End Document Setup %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The title (name) with a horizontal rule under it
+% (optional argument typesets an object right-justified across from name
+%  as well)
+%
+% Usage: \makeheading{name}
+%        OR
+%        \makeheading[right_object]{name}
+%
+% Place at top of document. It should be the first thing.
+% If ``right_object'' is provided in the square-braced optional
+% argument, it will be right justified on the same line as ``name'' at
+% the top of the CV. For example:
+%
+%       \makeheading[\emph{Curriculum vitae}]{Your Name}
+%
+% will put an emphasized ``Curriculum vitae'' at the top of the document
+% as a title. Likewise, a picture could be included:
+%
+%   \makeheading[\includegraphics[height=1.5in]{my_picutre}]{Your Name}
+%
+% the picture will be flush right across from the name.
+\newcommand{\makeheading}[2][]%
+        {\begin{minipage}[t]{\textwidth}%
+             {\large \bfseries #2 \hfill #1}\\[-0.15\baselineskip]%
+                 \rule{\columnwidth}{1pt}%
+         \end{minipage}}
+
+% The section headings
+%
+% Usage: \section{section name}
+\renewcommand{\section}[1]{\pagebreak[3]%
+    \hyphenpenalty=10000%
+    \vspace{0.8\baselineskip}%
+    \phantomsection\addcontentsline{toc}{section}{#1}%
+    \noindent{\bfseries #1}\par
+    \vspace{0.25\baselineskip}%
+    \hrule height 0.6pt
+    \vspace{0.25\baselineskip}}
+
+% An itemize-style list with lots of space between items
+\newenvironment{outerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*]}{\end{itemize}%
+         \vspace{-.6\baselineskip}}
+
+% An environment IDENTICAL to outerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{lonelist}[1][\enskip\textbullet]%
+        {\begin{list}{#1}{%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\topsep}{0pt}}}
+        {\end{list}\vspace{-.6\baselineskip}}
+
+% An itemize-style list with little space between items
+\newenvironment{innerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}}
+
+% An environment IDENTICAL to innerlist that has better pre-list spacing
+% when used as the first thing in a \section
+\newenvironment{loneinnerlist}[1][\enskip\textbullet]%
+        {\begin{itemize}[#1,leftmargin=*,parsep=0pt,itemsep=0pt,topsep=0pt,partopsep=0pt]}
+        {\end{itemize}\vspace{-.6\baselineskip}}
+
+% To add some paragraph space between lines.
+% This also tells LaTeX to preferably break a page on one of these gaps
+% if there is a needed pagebreak nearby.
+\newcommand{\blankline}{\quad\pagebreak[3]}
+\newcommand{\halfblankline}{\quad\vspace{-0.5\baselineskip}\pagebreak[3]}
+
+% Uses hyperref to link DOI
+\newcommand\doilink[1]{\href{http://dx.doi.org/#1}{#1}}
+\newcommand\doi[1]{doi:\doilink{#1}}
+
+% For \url{SOME_URL}, links SOME_URL to the url SOME_URL
+\providecommand*\url[1]{\href{#1}{#1}}
+% Same as above, but pretty-prints SOME_URL in teletype fixed-width font
+\renewcommand*\url[1]{\href{#1}{\texttt{#1}}}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS
+\providecommand*\email[1]{\href{mailto:#1}{#1}}
+% Same as above, but pretty-prints ADDRESS in teletype fixed-width font
+%\renewcommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+%\providecommand\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+%    \TeX}}
+\providecommand\BibTeX{{B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    \TeX}}
+\providecommand\Matlab{\textsc{Matlab}}
+
+%%%%%%%%%%%%%%%%%%%%%%%% End Helper Commands %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Begin CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\raggedright
+\makeheading{MANH HUNG NGUYEN}
+
+\section{PERSONAL INFORMATION}
+{\small
+\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    Email: \email{manguyen@mpi-sws.org}, Tel: +49 152 0951 4985 & Citizenship: Vietnamese, Date of birth: 20.08.1995\\
+    \multicolumn{2}{@{}l@{}}{%
+        \href{https://mhnguyen.me/}{[Homepage]}
+        \href{https://scholar.google.com/citations?user=rBAIfwgAAAAJ}{[Google Scholar]}
+        \href{https://www.linkedin.com/in/hungnm2008/}{[LinkedIn]}
+        \href{https://github.com/hungnm2008}{[GitHub]}}
+\end{tabular*}
+}
+
+\section{RESEARCH INTERESTS}
+Generative AI for Education, Diversity \& Creativity of LLMs, Reinforcement Learning
+
+\section{EDUCATION}
+\begin{innerlist}
+    \item \textbf{PhD Candidate} \hfill\textit{2022--Present}\\
+    Max Planck Institute for Software Systems (MPI-SWS), Germany\\
+    ELLIS PhD Program\\
+    \textbf{Supervisor}: \href{https://machineteaching.mpi-sws.org/adishsingla.html}{Adish Singla}\\
+    \textbf{Co-supervisor}: \href{https://tschiatschek.net/}{Sebastian Tschiatschek}
+
+    \item \textbf{Joint M.Sc. in Big Data Management and Analytics} \hfill\textit{2019--2021}\\
+    Université Paris-Saclay, France; Universitat Politècnica de Catalunya, Spain;\\
+    Université Libre de Bruxelles, Belgium\\
+    \textbf{Mention}: Grande Distinction\\
+    \textbf{Thesis}: \emph{Reinforcement Learning-based Meta-learning from Learning Curves}\\
+    \textbf{Supervisor}: \href{https://guyon.chalearn.org/}{Isabelle Guyon}\\
+    \textbf{Co-supervisor}: \href{https://lishengsun.github.io/}{Lisheng Sun-Hosoya}
+
+    \item \textbf{B.Sc. in Information Technology (Computer Science)} \hfill\textit{2013--2017}\\
+    Vietnam National University, Hanoi, Vietnam\\
+    \textbf{Mention}: High Distinction\\
+    \textbf{Thesis}: \emph{A Method for Generating User Interface Interaction Scenarios in Automated Testing}\\
+    \textbf{Supervisor}: \href{https://uet.vnu.edu.vn/~hungpn/}{Pham Ngoc Hung}
+\end{innerlist}
+
+\section{SELECTED PUBLICATIONS}
+\begin{innerlist}
+    \item \textbf{Manh Hung Nguyen}, Sebastian Tschiatschek, Adish Singla. \emph{Diversifying Multiple Generative Agents by Aligning with Human Populations}. Conference on Language Modeling (COLM), 2026.
+
+    \item \textbf{Manh Hung Nguyen}, Sebastian Tschiatschek, Adish Singla. \emph{Enhancing Diversity of LLM-Generated Educational Tasks}. Educational Data Mining (EDM), Poster, 2026. \href{https://educationaldatamining.org/edm2026/proceedings/2026.EDM.poster-demo-papers.424/2026.EDM.poster-demo-papers.424.pdf}{[paper]}
+
+    \item \textbf{Manh Hung Nguyen}, Victor-Alexandru Padurean, Alkis Gotovos, Sebastian Tschiatschek, Adish Singla. \emph{Synthesizing High-Quality Programming Tasks with LLM-Based Expert and Student Agents}. International Conference on Artificial Intelligence in Education (AIED), 2025. \href{https://link.springer.com/chapter/10.1007/978-3-031-98414-3_6}{[paper]}
+
+    \item \textbf{Manh Hung Nguyen}, Sebastian Tschiatschek, Adish Singla. \emph{Large Language Models for In-Context Student Modeling: Synthesizing Student's Behavior in Visual Programming}. Educational Data Mining (EDM), 2024. \href{https://educationaldatamining.org/edm2024/proceedings/2024.EDM-short-papers.31/2024.EDM-short-papers.31.pdf}{[paper]}
+
+    \item \textbf{Manh Hung Nguyen}, Lisheng Sun-Hosoya, Isabelle Guyon. \emph{Meta-learning from Learning Curves for Budget-Limited Algorithm Selection}. Pattern Recognition Letters, 2024. \href{https://www.sciencedirect.com/science/article/pii/S0167865524002423}{[paper]}
+
+    \item Dustin Carrión-Ojeda, Mahbubul Alam, Sergio Escalera, Ahmed Farahat, Dipanjan Ghosh, Teresa Gonzalez Diaz, Chetan Gupta, Isabelle Guyon, Joël Roman Ky, Xian Yeow Lee, Xin Liu, Felix Mohr, \textbf{Manh Hung Nguyen}, Emmanuel Pintelas, Stefan Roth, Simone Schaub-Meyer, Haozhe Sun, Ihsan Ullah, Joaquin Vanschoren, Lasitha Vidyaratne, Jiamin Wu, Xiaotian Yin. \emph{NeurIPS'22 Cross-Domain MetaDL Challenge: Results and Lessons Learned}. Conference on Neural Information Processing Systems (NeurIPS), 2022. \href{https://proceedings.mlr.press/v220/carrion-ojeda23a/carrion-ojeda23a.pdf}{[paper]}
+
+    \needspace{5\baselineskip}
+    \item \textbf{Manh Hung Nguyen}, Lisheng Sun-Hosoya, Nathan Grinsztajn, Isabelle Guyon. \emph{Meta-learning from Learning Curves Challenge: Lessons Learned from the First Round and Design of the Second Round}. Complex Feedback in Online Learning Workshop at ICML, 2022. \href{https://arxiv.org/pdf/2208.02821}{[paper]}
+
+    \needspace{4\baselineskip}
+    \item \textbf{Manh Hung Nguyen}, Lisheng Sun-Hosoya, Nathan Grinsztajn, Isabelle Guyon. \emph{Meta-learning from Learning Curves: Challenge Design and Baseline Results}. International Joint Conference on Neural Networks (IJCNN), 2022. \href{https://ieeexplore.ieee.org/iel7/9891857/9889787/09892534.pdf}{[paper]}
+
+    \item \textbf{Manh Hung Nguyen}, Nathan Grinsztajn, Isabelle Guyon, Lisheng Sun-Hosoya. \emph{MetaREVEAL: RL-based Meta-learning from Learning Curves}. Workshop on Interactive Adaptive Learning at ECML PKDD, 2021. \href{https://www.activeml.net/ial2021/pdf/ialatecml_paper1.pdf}{[paper]}
+
+\end{innerlist}
+
+\section{WORK EXPERIENCE}
+\begin{innerlist}
+    \item \textbf{Visiting Researcher, University of Vienna, Austria} \hfill\textit{Mar.--May 2026}\\
+    Working on dynamics of collective diversity in human-AI co-creation for creative tasks.
+
+    \item \textbf{Researcher, ChaLearn, USA} \hfill\textit{Nov. 2021--Jul. 2022}\\
+    Designing and organizing Meta-learning competitions at IEEE WCCI 2022 and AutoML-Conf 2022.
+
+    \item \textbf{Research Intern, Inria, France} \hfill\textit{Apr.--Aug. 2021}\\
+    Working on RL-based meta-learning from learning curves as a REVEAL game.
+\end{innerlist}
+
+\section{TEACHING \& ACADEMIC SERVICE}
+\begin{innerlist}
+    \item \textbf{Program Committee Member \& Reviewer}\\
+    ARR 2026, COLM 2026, HCOMP 2026, AIED 2026, EDM 2026, Pattern Recognition Letters 2025, ISSEP 2025, and KSE 2025
+
+    \item \textbf{Teaching Assistant}\\
+    Generative AI for Creativity, Saarland University (Summer 2026)\\
+    Generative AI for Education, Saarland University (Winter 2025)\\
+    Advanced Programming, Vietnam National University (2017--2019)\\
+    Software Engineering, Vietnam National University (2017--2019)\\
+    Object-Oriented Programming, Vietnam National University (2017--2019)
+\end{innerlist}
+
+\section{HONORS \& AWARDS}
+\begin{innerlist}
+    \item \textbf{Erasmus Mundus Joint Master Scholarship}, fully funded by the European Union \hfill \textit{2019}
+    \item \textbf{Toshiba Scholarship} for Outstanding Student, Toshiba Corporation \hfill \textit{2018}
+    \item \textbf{2nd Prize}, Scientific Research Conference for Students, Faculty of Information Technology, VNU \hfill \textit{2017}
+    \item \textbf{3rd Prize}, Scientific Research Conference for Students, VNU \hfill \textit{2017}
+    \item \textbf{Excellent Bachelor's Thesis Award}, VNU \hfill \textit{2017}
+    \item \textbf{Annual Scholarship} for Outstanding Students, VNU \hfill \textit{2013--2017}
+    \item \textbf{Pony Chung Scholarship}, Pony Chung Foundation \hfill \textit{2014}
+    \item \textbf{3rd Prize}, Provincial Programming Competition for Gifted High School Students, Hung Yen \hfill \textit{2013}
+\end{innerlist}
+
+\section{LANGUAGE SKILLS}
+\begin{innerlist}
+    \item[] English (C1), German (A1), Vietnamese (Native)
+\end{innerlist}
+
+\section{TECHNICAL SKILLS}
+\begin{innerlist}
+    \item[] \textbf{Programming languages}: Python, Java, C/C++
+    \item[] \textbf{Tools and platforms}: AWS, Prolific/MTurk, Linux, SLURM, Docker, Heroku
+\end{innerlist}
+
+\section{REFERENCES}
+\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}r@{}}
+    \textbf{Adish Singla} (Tenured Faculty, MPI-SWS) & \email{adishs@mpi-sws.org} \\
+    \textbf{Sebastian Tschiatschek} (Tenured Faculty, University of Vienna) & \email{sebastian.tschiatschek@univie.ac.at} \\
+    \textbf{Isabelle Guyon} (Director of Research, Google DeepMind) & \email{guyon@chalearn.org}
+\end{tabular*}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------%
+% The following is copyright and licensing information for
+% redistribution of this LaTeX source code; it also includes a liability
+% statement. If this source code is not being redistributed to others,
+% it may be omitted. It has no effect on the function of the above code.
+%----------------------------------------------------------------------%
+% Copyright (c) 2007, 2008, 2009, 2010, 2011 by Theodore P. Pavlic
+%
+% Unless otherwise expressly stated, this work is licensed under the
+% Creative Commons Attribution-Noncommercial 3.0 United States License. To
+% view a copy of this license, visit
+% http://creativecommons.org/licenses/by-nc/3.0/us/ or send a letter to
+% Creative Commons, 171 Second Street, Suite 300, San Francisco,
+% California, 94105, USA.
+%
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+% OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+% MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+% IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+% CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+% TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+% SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+%----------------------------------------------------------------------%
