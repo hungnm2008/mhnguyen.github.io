@@ -18,7 +18,7 @@ projects:
     conference: Conference on Language Modeling (COLM) 2026
     conference-web:
     status:
-    authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
+    authors: <u>Manh Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
     pdf:
     code:
     demo:
@@ -36,7 +36,7 @@ projects:
     conference: Educational Data Mining (EDM) 2026
     conference-web:
     status:
-    authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
+    authors: <u>Manh Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
     pdf: https://arxiv.org/pdf/2512.23601
     code:
     demo:
@@ -54,7 +54,7 @@ projects:
     conference: International Conference on Artificial Intelligence in Education (AIED) 2025
     conference-web:
     status:
-    authors: <u>M. Hung Nguyen</u>, Victor-Alexandru Padurean, Alkis Gotovos, Sebastian Tschiatschek, Adish Singla
+    authors: <u>Manh Hung Nguyen</u>, Victor-Alexandru Padurean, Alkis Gotovos, Sebastian Tschiatschek, Adish Singla
     pdf: https://arxiv.org/pdf/2504.07655
     code:
     demo:
@@ -72,7 +72,7 @@ projects:
     conference: Educational Data Mining (EDM) 2024
     conference-web:
     status:
-    authors: <u>M. Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
+    authors: <u>Manh Hung Nguyen</u>, Sebastian Tschiatschek, Adish Singla
     pdf: https://educationaldatamining.org/edm2024/proceedings/2024.EDM-short-papers.31/2024.EDM-short-papers.31.pdf
     code:
     demo:
@@ -90,7 +90,7 @@ projects:
     conference: Pattern Recognition Letters 2024
     conference-web:
     status:
-    authors: <u>M. Hung Nguyen</u>, Lisheng Sun-Hosoya, Isabelle Guyon
+    authors: <u>Manh Hung Nguyen</u>, Lisheng Sun-Hosoya, Isabelle Guyon
     pdf: https://arxiv.org/pdf/2410.07696
     code:
     demo:
@@ -108,7 +108,7 @@ projects:
     conference: Conference on Neural Information Processing Systems (NeurIPS) 2022
     conference-web:
     status:
-    authors: Dustin Carrión-Ojeda, Mahbubul Alam, Sergio Escalera, Ahmed Farahat, Dipanjan Ghosh, Teresa Gonzalez Diaz, Chetan Gupta, Isabelle Guyon, Joël Roman Ky, Xian Yeow Lee, Xin Liu, Felix Mohr, <u>M. Hung Nguyen</u>, Emmanuel Pintelas, Stefan Roth, Simone Schaub-Meyer, Haozhe Sun, Ihsan Ullah, Joaquin Vanschoren, Lasitha Vidyaratne, Jiamin Wu, Xiaotian Yin
+    authors: Dustin Carrión-Ojeda, Mahbubul Alam, Sergio Escalera, Ahmed Farahat, Dipanjan Ghosh, Teresa Gonzalez Diaz, Chetan Gupta, Isabelle Guyon, Joël Roman Ky, Xian Yeow Lee, Xin Liu, Felix Mohr, <u>Manh Hung Nguyen</u>, Emmanuel Pintelas, Stefan Roth, Simone Schaub-Meyer, Haozhe Sun, Ihsan Ullah, Joaquin Vanschoren, Lasitha Vidyaratne, Jiamin Wu, Xiaotian Yin
     pdf: https://proceedings.mlr.press/v220/carrion-ojeda23a/carrion-ojeda23a.pdf
     code:
     demo:
