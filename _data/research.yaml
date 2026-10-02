@@ -12,6 +12,24 @@ categories:
 
 projects:
 
+  - title: Dynamics of Collective Diversity in Human–AI Co-Creation for Creative Tasks
+    system-name:
+    gif:
+    conference: Conference on Neural Information Processing Systems (NeurIPS) 2026
+    conference-web:
+    status:
+    authors: <u>Manh Hung Nguyen</u>, Chao Wen, Sebastian Tschiatschek, Adish Singla
+    pdf: https://openreview.net/pdf/dc0d86437d4cadc3ee2d78fe719004c1f0f66187.pdf
+    code:
+    demo:
+    slides:
+    talk:
+    poster:
+    abstract-less:
+    abstract-more:
+    tag: more_neurips2026
+    category: llm-diversity
+
   - title: Diversifying Multiple Generative Agents by Aligning with Human Populations
     system-name:
     gif:
