@@ -7,6 +7,18 @@ _site/
 # Bundler
 vendor/
 
+# Standalone local repository; never include in the website repository.
+/applications/
+
 # OS
 .DS_Store
 Thumbs.db
+
+# Private CVs (phone number, date of birth, referee emails); keep local only.
+/CV_ManhHungNguyen*.tex
+/CV_ManhHungNguyen*.pdf
+/HQuick_cv*
+
+# Local-only pages.
+/apply.html
+/imprint.html
